@@ -15,7 +15,7 @@ export default function CountdownTimer() {
 
     function calculateTimeLeft() {
       const now = new Date().getTime();
-      const difference = parseInt(targetDate) - now; // ✅ Removed '!'
+      const difference = parseInt(targetDate) - now;
 
       if (difference <= 0) {
         localStorage.removeItem("countdownTarget"); // Reset when countdown ends
